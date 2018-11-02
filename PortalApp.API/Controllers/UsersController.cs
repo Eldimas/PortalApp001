@@ -17,10 +17,10 @@ namespace PortalApp.API.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly IDatingRepository _repo;
+        private readonly IPortalRepository _repo;
         private readonly IMapper _mapper;
 
-        public UsersController(IDatingRepository repo, IMapper mapper)
+        public UsersController(IPortalRepository repo, IMapper mapper)
         {
             _mapper = mapper;
             _repo = repo;
@@ -75,7 +75,7 @@ namespace PortalApp.API.Controllers
             if (await _repo.SaveAll())
                 return NoContent();
 
-            throw new Exception($"Updating user {id} failed on save");
+            throw new Exception($"UpPortal user {id} failed on save");
         }
 
     }

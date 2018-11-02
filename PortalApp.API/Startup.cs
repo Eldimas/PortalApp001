@@ -96,7 +96,7 @@ namespace PortalApp.API
             services.AddAutoMapper();
             services.AddTransient<Seed>();
             services.AddScoped<IAuthRepository, AuthRepository>();
-            services.AddScoped<IDatingRepository, DatingRepository>();
+            services.AddScoped<IPortalRepository, PortalRepository>();
             services.AddScoped<LogUserActivity>();
         }
 

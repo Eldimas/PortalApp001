@@ -5,7 +5,7 @@ using PortalApp.API.Models;
 
 namespace PortalApp.API.Data
 {
-    public interface IDatingRepository
+    public interface IPortalRepository
     {
          void Add<T>(T entity) where T: class;
          void Delete<T>(T entity) where T: class;

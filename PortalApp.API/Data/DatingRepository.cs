@@ -8,10 +8,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PortalApp.API.Data
 {
-    public class DatingRepository : IDatingRepository
+    public class PortalRepository : IPortalRepository
     {
         private readonly DataContext _context;
-        public DatingRepository(DataContext context)
+        public PortalRepository(DataContext context)
         {
             _context = context;
         }
